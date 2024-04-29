@@ -27,20 +27,20 @@ function handleNewClick(){
     hideButtons();
     blankFields();
     var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleNewSave()\">Save</button>"
-    buttomHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" onclick=\"handleCancelSave()\">Cancel</button>"
+    buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" onclick=\"handleCancelSave()\">Cancel</button>"
     document.getElementById("saveButton").innerHTML = buttonHtml;
     document.getElementById("saveButton").style.display = "inline-block";
 }
 
 function handleRentClick(){
     myBook.numAvlb--;
-    document.getElementById("bookAlvb").value = myBook.numAvlb;
+    document.getElementById("bookAvlb").value = myBook.numAvlb;
     putBook(myBook.id);
 }
 
 function handleReturnClick(){
     myBook.numAvlb++;
-    document.getElementById("bookAlvb").value = myBook.numAvlb;
+    document.getElementById("bookAvlb").value = myBook.numAvlb;
     putBook(myBook.id);
 }
 
