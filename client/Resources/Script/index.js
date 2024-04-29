@@ -49,7 +49,7 @@ function handleDeleteClick(){
 }
 
 function handleCancelSave(){
-    pupopulateForm();
+    populateForm();
     makeReadOnly();
     showButtons();
 }
