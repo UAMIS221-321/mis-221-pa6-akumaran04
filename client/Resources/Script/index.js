@@ -17,7 +17,7 @@ function handleEditClick(){
     makeEditable();
     hideButtons();
     var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleEditSave("+myBook.id+")\">Save</button>"
-    buttomHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" onclick=\"handleCancelSave()\">Cancel</button>"
+    buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancle\" onclick=\"handleCancelSave()\">Cancel</button>"
     document.getElementById("saveButton").innerHTML = buttonHtml;
     document.getElementById("saveButton").style.display = "inline-block";
 }
@@ -61,7 +61,7 @@ function handleEditSave(id){
 }
 
 function handleNewSave(){
-    putBook();
+    postBook();
     makeReadOnly();
     showButtons();
     blankFields();
